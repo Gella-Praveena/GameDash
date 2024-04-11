@@ -1,0 +1,131 @@
+* {
+    margin: 0px;
+    padding:0px;  
+}
+body{
+    background-color:#a2ddf2;
+    text-align: center;
+}
+h1{
+    margin-top: 5vmin;
+    font-size: 8vmin;
+}
+.container{
+    height:70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 500px;
+    margin-top: 140px;
+}
+.game{
+    height:60vmin;
+    width:60vmin;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+    align-items: center;
+    gap:1.5vmin;
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.4);
+    font-size:8vmin ;
+    color: #7a3030;
+    background-color: #F9EFDB;
+}
+#reset-btn{
+    margin-bottom: 3rem;
+    padding:1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.4);
+}
+
+#new-btn{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding:1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.4); 
+}
+
+#msg{
+    color: #351F39;
+    font-size: 8vmin;
+}
+.msg-container{
+    margin-top: 40vmin;
+    margin-bottom: 40vmin;
+    height: 20vmin;
+}
+.hide{
+    display: none;
+}
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 8vmin;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container img {
+        position: fixed;
+        max-width: 40vmin;
+        max-height: 40vmin;
+        margin: 10px; 
+        margin-left: 100px; 
+        margin-top: 180px;
+    }
+
+    .game {
+        height: 60vmin;
+        width: 60vmin;
+    }
+
+    .box {
+        height: 18vmin;
+        width: 18vmin;
+        font-size: 8vmin;
+    }
+
+    #reset-btn,
+    #new-btn {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    #msg {
+        font-size: 6vmin;
+    }
+
+    .msg-container {
+        margin-top: 10vmin;
+        margin-bottom: 10vmin;
+        height: 15vmin;
+    }
+}
+
